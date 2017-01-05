@@ -1,7 +1,13 @@
 import os
 import sys, getopt
+import time
 
 showProgress = False
+NOT_FOUND = -1
+
+BEFORE = -1
+SAME = 0
+AFTER = 1
 
 def getDirsAndFiles(path) :
     lastDir = os.getcwd()
@@ -87,6 +93,66 @@ def printByDirectory(dupes):
     return mess
 #END-DEF
 
+#Returns BEFORE, SAME, or AFTER in reference to the alphabetical heirachy
+#of item 1 to item 2
+def compareKeys(itemList1, itemList2) :
+    if itemList1[0] == itemList2[0] :
+        return SAME
+    elif sorted([itemList1[0], itemList2[0]])[0] == itemList1[0] :
+        return BEFORE
+    else:
+        return AFTER
+    #END-IF
+#END-DEF
+
+def addItem(listList, itemList) :
+    index = -1
+    if len(listList) == 0 :
+        listList.append(itemList)
+        index = 0
+    else :
+        if compareKeys(itemList, listList[0]) == BEFORE :
+            listList.insert(0, itemList)
+            index = 0
+        elif compareKeys(itemList, listList[len(listList) - 1]) == AFTER :
+            listList.append(itemList)
+            index = (len(listList) - 1)
+        else :
+            index = len(listList) / 2
+            size = index
+            while compareKeys(itemList,listList[index]) != BEFORE and compareKeys(itemList, listList[index - 1]) != AFTER :
+                size = size/2
+                if compareKeys(itemList, listList[index]) == BEFORE :
+                    index = index - size
+                else :
+                    index = index + size
+                #END-IF
+            #END-WHILE
+            listList.insert(index, itemList)
+        #END-IF
+    #END-IF
+    return index
+#END-DEF
+
+def binarySearch(listList, key) :
+    if len(listList) == 0 :
+        return NOT_FOUND
+    index = len(listList) / 2
+    size = index
+    while compareKeys([key], listList[index]) != SAME and size > 1:
+        size = size/2
+        if compareKeys([key], listList[index]) == BEFORE :
+            index = index - size
+        else :
+            index = index + size
+        #END-IF
+    #END-WHILE
+    if compareKeys([key], listList[index]) != SAME :
+        return NOT_FOUND
+    #END-IF
+    return index
+#END-DEF
+
 def getDupes(path):
 
     print("Getting dupes in " + path)
@@ -115,34 +181,44 @@ def getDupes(path):
 
         for item in fileList :
             found = False
+            index = binarySearch(dupes, item)
 
-            for d in dupes :
-                if item == d[0] :
-                    d.append(currDir)
+            if index != NOT_FOUND :
+                dupes[index].append(currDir)
+                found = True
+
+            if found != True :
+                index =  binarySearch(firstInstances, item)
+                if index != NOT_FOUND :
+                    addItem(dupes, [item, firstInstances[index][1], currDir])
                     found = True
+                else :
+                    addItem(firstInstances, [item, currDir])
                 #END-IF
-            #END-FOR
-
-            if found == False:
-                for f in firstInstances :
-                    if item == f[0] :
-                        found = True
-                        #append first instance
-                        dupes.append(f)
-                        #add current directory holding current instance
-                        dupes[len(dupes)-1].append(currDir)
-                    #END-IF
-                #END-FOR
             #END-IF
-
-            if found == False :
-                firstInstances.append([item, currDir])
-
+            #
+            # for d in dupes :
+            #     if item == d[0] :
+            #         d.append(currDir)
+            #         found = True
+            #     #END-IF
+            # #END-FOR
+            #
+            # if found == False:
+            #     for f in firstInstances :
+            #         if item == f[0] :
+            #             found = True
+            #             #add item and its first instance to dupes
+            #             addItem(dupes, [item, f[1], currDir])
+            #         #END-IF
+            #     #END-FOR
+            # #END-IF
+            #
+            # if found == False :
+            #     addItem(firstInstances, [item, currDir])
+            # #END-IF
         #END-FOR
-
     #END-WHILE
-
-    dupes.sort()
 
     return dupes
 #END-DEF
@@ -165,6 +241,9 @@ if "y" in raw_input("Directory View Mode? (y/n) ") :
 if "y" in raw_input("Output to File?(y/n) ") :
     output = raw_input("Filename: ")
 #END-IF
+
+startTime = time.time()
+
 dupes = getDupes(os.path.abspath(directory))
 
 if directoryMode == True :
@@ -182,7 +261,8 @@ else :
     f.close()
 #END-IF
 
-raw_input("Press Enter when finished")
-
 print("\r\nProgram Ended Succesfully")
+print("\r\nRuntime = %d seconds\r\n" % (time.time() - startTime))
+
+raw_input("Press Enter when finished")
 #END-PROGRAM
