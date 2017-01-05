@@ -1,0 +1,58 @@
+Duplicate Finder V0.1
+By Russell B. Thiessen
+
+///////////////////
+#    IMPORTANT   #
+//////////////////
+
+If you need to stop the program at any time use ctrl+c
+
+This program may run for a long time on large directories
+
+If you have not used this program before test it out on the
+provided TestFolder first to avoid confusion when used on 
+larger directories.
+
+////////////////
+#    USAGE    #
+//////////////
+
+Root Directory:
+	The directory to start searching from
+
+Directory View Mode :
+	When true displays the output as
+		
+	Dir
+	   -file
+	   -file
+	   -file
+	   -file
+
+	Dir
+	   -file
+	   -file
+	   -file
+	   -file
+
+	If not true displays output as
+	
+	File
+	   -dir
+	   -dir
+	   -dir
+
+	File
+	   -dir
+	   -dir
+	   -dir
+
+Output to File:
+	When true the program will prompt you to input
+	a filename to store the plaintext of the output
+
+Filename:
+	The name of the file which you want the output in
+	
+
+
