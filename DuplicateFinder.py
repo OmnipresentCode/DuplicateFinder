@@ -12,20 +12,23 @@ AFTER = 1
 def getDirsAndFiles(path) :
     lastDir = os.getcwd()
 
-    os.chdir(path)
-
-    dirList = os.listdir(path);
-
     dirs = []
     files = []
 
-    for item in dirList:
-        if os.path.isdir(os.path.abspath(item)):
-            dirs.append(os.path.abspath(item))
-        else:
-            files.append(item)
-        #END-IF
-    #END-FOR
+    try :
+        os.chdir(path)
+        dirList = os.listdir(path);
+
+        for item in dirList:
+            if os.path.isdir(os.path.abspath(item)):
+                dirs.append(os.path.abspath(item))
+            else:
+                files.append(item)
+            #END-IF
+        #END-FOR
+    except WindowsError:
+        print("Cannot access %s" % path)
+    #END-TRY
 
     os.chdir(lastDir)
     return (dirs,files)
@@ -196,27 +199,6 @@ def getDupes(path):
                     addItem(firstInstances, [item, currDir])
                 #END-IF
             #END-IF
-            #
-            # for d in dupes :
-            #     if item == d[0] :
-            #         d.append(currDir)
-            #         found = True
-            #     #END-IF
-            # #END-FOR
-            #
-            # if found == False:
-            #     for f in firstInstances :
-            #         if item == f[0] :
-            #             found = True
-            #             #add item and its first instance to dupes
-            #             addItem(dupes, [item, f[1], currDir])
-            #         #END-IF
-            #     #END-FOR
-            # #END-IF
-            #
-            # if found == False :
-            #     addItem(firstInstances, [item, currDir])
-            # #END-IF
         #END-FOR
     #END-WHILE
 
