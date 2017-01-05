@@ -1,5 +1,6 @@
 import os
 import sys, getopt
+import time
 
 showProgress = False
 NOT_FOUND = -1
@@ -240,6 +241,9 @@ if "y" in raw_input("Directory View Mode? (y/n) ") :
 if "y" in raw_input("Output to File?(y/n) ") :
     output = raw_input("Filename: ")
 #END-IF
+
+startTime = time.time()
+
 dupes = getDupes(os.path.abspath(directory))
 
 if directoryMode == True :
@@ -257,7 +261,8 @@ else :
     f.close()
 #END-IF
 
-raw_input("Press Enter when finished")
-
 print("\r\nProgram Ended Succesfully")
+print("\r\nRuntime = %d seconds\r\n" % (time.time() - startTime))
+
+raw_input("Press Enter when finished")
 #END-PROGRAM
