@@ -228,6 +228,8 @@ startTime = time.time()
 
 dupes = getDupes(os.path.abspath(directory))
 
+endTime = time.time()
+
 if directoryMode == True :
     mess = printByDirectory(dupes)
 else :
@@ -244,7 +246,7 @@ else :
 #END-IF
 
 print("\r\nProgram Ended Succesfully")
-print("\r\nRuntime = %d seconds\r\n" % (time.time() - startTime))
+print("\r\nRuntime = %d seconds\r\n" % (endTime - startTime))
 
 raw_input("Press Enter when finished")
 #END-PROGRAM
