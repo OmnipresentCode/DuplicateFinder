@@ -158,7 +158,7 @@ def binarySearch(listList, key) :
 
 def getDupes(path):
 
-    print("Getting dupes in " + path)
+    print("Getting dupes in %s\r\nTo abort press 'ctrl+c'" % path)
 
     dupes = []
     firstInstances = []
@@ -239,7 +239,7 @@ if output == "" :
     print(mess)
 else :
     filePath = os.getcwd() +"\\"+ output
-    print(filePath)
+    print("\r\nOutputing to %s" % filePath)
     f = open(filePath, "w")
     f.write(mess)
     f.close()
