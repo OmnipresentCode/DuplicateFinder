@@ -1,0 +1,55 @@
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\build\bdist.win32\winexe\collect-2.7\encodings
+Files:
+	__init__.pyc	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\build\bdist.win32\winexe\collect-2.7\logging
+Files:
+	__init__.pyc	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\build\bdist.win32\winexe\collect-2.7\unittest
+Files:
+	__init__.pyc	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\dist\TestFolder
+Files:
+	The Negus ruled Africa - Copy (3).txt	
+	The Negus ruled Africa - Copy (4).txt	
+	The Negus ruled Africa - Copy (5).txt	
+	The Negus ruled Africa - Copy.txt	
+	The Negus ruled Africa.txt	
+	backbuck.txt	
+	yoho.txt	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\dist\TestFolder\Foo
+Files:
+	The Negus ruled Africa - Copy (3).txt	
+	The Negus ruled Africa - Copy (4).txt	
+	The Negus ruled Africa - Copy (5).txt	
+	The Negus ruled Africa - Copy.txt	
+	The Negus ruled Africa.txt	
+	backbuck.txt	
+	not real.bmp	
+	yoho.txt	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\dist\TestFolder\Foo\subfolder
+Files:
+	The Negus ruled Africa - Copy (3).txt	
+	The Negus ruled Africa - Copy (4).txt	
+	The Negus ruled Africa - Copy (5).txt	
+	The Negus ruled Africa - Copy.txt	
+	The Negus ruled Africa.txt	
+	backbuck.txt	
+	not real.bmp	
+	yoho.txt	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\dist\TestFolder\Foo\subfolder\another folder
+Files:
+	not real.bmp	
+
+Directory: C:\Users\brade\OneDrive\Documents\Duplicate Finder\dist\TestFolder\Foo\subfolder\that folder
+Files:
+	The Negus ruled Africa - Copy (5).txt	
+	The Negus ruled Africa - Copy.txt	
+	The Negus ruled Africa.txt	
+	yoho.txt	
