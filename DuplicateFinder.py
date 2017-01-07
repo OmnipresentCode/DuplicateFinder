@@ -96,6 +96,51 @@ def printByDirectory(dupes):
     return mess
 #END-DEF
 
+def addItem(listList, itemList) :
+
+    if len(listList) == 0 :
+        listList.insert(0,itemList)
+        return 0
+    elif len(listList) == 1 :
+        if compareKeys(itemList, listList[0]) == BEFORE :
+            listList.insert(0,itemList)
+            return 0
+        else:
+            listList.insert(1,itemList)
+            return 1
+        #END-IF
+    #END-IF
+
+    left = 0
+    right = len(listList) - 1
+    middle = 0
+
+    notFound = True
+    counter = 0
+    while True :
+        counter += 1
+        if(counter > 100) :
+            print("left = %d, right = %d, middle = %d" % (left,right,middle))
+        middle = (left + right) / 2
+
+        if middle == len(listList) - 1 :
+            listList.append(itemList)
+            return middle + 1
+        elif middle == 0 :
+            listList.insert(0, itemList)
+            return 0
+        elif compareKeys(itemList, listList[middle]) == AFTER and compareKeys(itemList, listList[middle + 1]) == BEFORE :
+            listList.insert(middle + 1, itemList)
+            return middle + 1
+        elif compareKeys(itemList, listList[middle]) == BEFORE :
+            right = middle
+        else :
+            left = middle + 1
+        #END-IF
+    #END-WHILE
+    return middle
+#END-DEF
+
 #Returns BEFORE, SAME, or AFTER in reference to the alphabetical heirachy
 #of item 1 to item 2
 def compareKeys(itemList1, itemList2) :
@@ -108,52 +153,34 @@ def compareKeys(itemList1, itemList2) :
     #END-IF
 #END-DEF
 
-def addItem(listList, itemList) :
-    index = -1
-    if len(listList) == 0 :
-        listList.append(itemList)
-        index = 0
-    else :
-        if compareKeys(itemList, listList[0]) == BEFORE :
-            listList.insert(0, itemList)
-            index = 0
-        elif compareKeys(itemList, listList[len(listList) - 1]) == AFTER :
-            listList.append(itemList)
-            index = (len(listList) - 1)
-        else :
-            index = len(listList) / 2
-            size = index
-            while compareKeys(itemList,listList[index]) != BEFORE and compareKeys(itemList, listList[index - 1]) != AFTER :
-                size = size/2
-                if compareKeys(itemList, listList[index]) == BEFORE :
-                    index = index - size
-                else :
-                    index = index + size
-                #END-IF
-            #END-WHILE
-            listList.insert(index, itemList)
-        #END-IF
-    #END-IF
-    return index
-#END-DEF
-
 def binarySearch(listList, key) :
     if len(listList) == 0 :
         return NOT_FOUND
-    index = len(listList) / 2
-    size = index
-    while compareKeys([key], listList[index]) != SAME and size > 1:
-        size = size/2
-        if compareKeys([key], listList[index]) == BEFORE :
-            index = index - size
+
+    left = 0
+    right = len(listList) - 1
+    middle = 0
+
+    notFound = True
+
+    while notFound and left < right :
+        middle = (right + left) / 2
+
+        if compareKeys([key], listList[middle]) == SAME:
+            notFound = False
         else :
-            index = index + size
+            if compareKeys([key], listList[middle]) == BEFORE :
+                right = middle
+            else :
+                left = middle + 1
+            #END-IF
         #END-IF
     #END-WHILE
-    if compareKeys([key], listList[index]) != SAME :
-        return NOT_FOUND
+
+    if compareKeys([key], listList[middle]) != SAME :
+        middle = NOT_FOUND
     #END-IF
-    return index
+    return middle
 #END-DEF
 
 def getDupes(path):
@@ -165,6 +192,7 @@ def getDupes(path):
     dirStack = [path]
 
     counter = 0
+    root = os.getcwd()
 
     while len(dirStack) > 0 :
         counter = counter + 1
@@ -173,6 +201,7 @@ def getDupes(path):
             print("working... \r\n\t%d directories checked" % counter)
 
         currDir = dirStack.pop()
+        os.chdir(currDir)
 
         dirList, fileList = getDirsAndFiles(currDir)
 
@@ -181,15 +210,13 @@ def getDupes(path):
                 dirStack.append(item)
             #END-FOR
         #END-IF
-
         for item in fileList :
             found = False
             index = binarySearch(dupes, item)
-
             if index != NOT_FOUND :
                 dupes[index].append(currDir)
                 found = True
-
+            #END-IF
             if found != True :
                 index =  binarySearch(firstInstances, item)
                 if index != NOT_FOUND :
@@ -202,12 +229,12 @@ def getDupes(path):
         #END-FOR
     #END-WHILE
 
+    os.chdir(root)
     return dupes
 #END-DEF
 
 
 #Start program
-
 helpStr = "python DuplicateFinder.py -d <root directory>\r\n \
             \t-f or --fileView            change the output to be file focused\
         \r\n\t-d <root> or --dir <root>   set the direcory to start from\
@@ -240,6 +267,7 @@ if output == "" :
 else :
     filePath = os.getcwd() +"\\"+ output
     print("\r\nOutputing to %s" % filePath)
+    print(mess)
     f = open(filePath, "w")
     f.write(mess)
     f.close()

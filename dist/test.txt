@@ -1,0 +1,173 @@
+
+Filename: BP3-N1 03 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+
+Filename: BP3-N1 00 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 01 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 02 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 03 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 04 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 05 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 06 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 07 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 08 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 09 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 10 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 11 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-04
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-02
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-01
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-00
+
+Filename: BP3-N1 11 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-05
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\N1\BP3-N1 2015-04-03
+
+Filename: The Negus ruled Africa - Copy (3).txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+
+Filename: The Negus ruled Africa - Copy (4).txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+
+Filename: The Negus ruled Africa - Copy (5).txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder\that folder
+
+Filename: The Negus ruled Africa - Copy.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder\that folder
+
+Filename: The Negus ruled Africa.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder\that folder
+
+Filename: backbuck.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+
+Filename: backbuck.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+
+Filename: not real.bmp 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder\another folder
+
+Filename: yoho.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder
+
+Filename: yoho.txt 
+Locations: 
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder
+	C:\Users\brade\OneDrive\Documents\DuplicateFinder\TestFolder\Foo\subfolder\that folder
